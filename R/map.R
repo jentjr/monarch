@@ -1,9 +1,6 @@
-library(rgdal)
-library(rgeos)
-library(broom)
+library(sf)
 
-
-load_county_map <- readOGR(dsn = "data", 
+load_county_map <- st_read(dsn = "data", 
                       layer = "monarch_data_county_summaries_090915"
                       )
 
